@@ -13,7 +13,7 @@ export PYTHONPATH=$PYTHONPATH:/var/lib/jenkins/.local/lib/python3.12/site-packag
 pkill -f "python3 app.py" || echo "No running Flask app found"
 
 # Start app directly in background with full path
-nohup /usr/bin/python3 app.py > app.log 2>&1 &
+python3 app.py > app.log 2>&1 & disown
 
 # Wait a few seconds
 sleep 5
