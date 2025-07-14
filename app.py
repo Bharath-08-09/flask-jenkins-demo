@@ -1,10 +1,9 @@
-from flask import Flask
+import time
 
-app = Flask(__name__)
+print("✅ CI/CD pipeline executed successfully!")
+with open("output.txt", "w") as f:
+    f.write("Hello from Jenkins CI/CD!\n")
+    f.write("This file was created by app.py\n")
 
-@app.route('/')
-def hello():
-    return "Hello from Flask deployed via Jenkins CI/CD!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+# Simulate long-running job
+time.sleep(10)
