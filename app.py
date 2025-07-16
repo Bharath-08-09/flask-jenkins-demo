@@ -1,4 +1,4 @@
-import time
+\import time
 
 print("✅ CI/CD pipeline executed successfully!")
 with open("output.txt", "w") as f:
@@ -7,4 +7,4 @@ with open("output.txt", "w") as f:
 
 # Simulate long-running job
 time.sleep(10)
-print("🚀 Code updated and pushed to trigger Jenkins webhook.")
+print("Code updated and testing the webhook")
