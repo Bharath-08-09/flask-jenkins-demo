@@ -7,3 +7,4 @@ with open("output.txt", "w") as f:
 
 # Simulate long-running job
 time.sleep(10)
+print("🚀 Code updated and pushed to trigger Jenkins webhook.")
